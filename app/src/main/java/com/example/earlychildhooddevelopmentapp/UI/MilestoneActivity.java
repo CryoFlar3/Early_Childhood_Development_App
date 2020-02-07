@@ -1,8 +1,8 @@
 package com.example.earlychildhooddevelopmentapp.UI;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.earlychildhooddevelopmentapp.Model.Headers;
@@ -69,7 +68,7 @@ public class MilestoneActivity extends AppCompatActivity {
         months = intent.getIntExtra("months", 0);
 //        premature = getIntent().getExtras().getBoolean("perfect");
 
-
+        int page = switchPage.SwitchPage(year, months);
         if(year > 5){
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setTitle("Oops!");
@@ -109,7 +108,7 @@ public class MilestoneActivity extends AppCompatActivity {
         else{
             loadPage(0);
         }
-//        loadPage(switchPage.change(year, months));
+
 
     }
 

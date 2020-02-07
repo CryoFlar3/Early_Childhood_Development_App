@@ -2,9 +2,12 @@ package com.example.earlychildhooddevelopmentapp.Model;
 
 public class SwitchPage {
 
-    public int change(int year, int months){
+    public int SwitchPage(int year, int months){
 
-        if (year > 4) {
+        if (year > 5){
+            return 9;
+        }
+        else if (year > 4) {
             return 8;
         }
         else if(year > 3) {
@@ -31,6 +34,7 @@ public class SwitchPage {
         else {
             return 0;
         }
+
 
     }
 }
