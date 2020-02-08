@@ -15,7 +15,6 @@ import android.widget.TextView;
 import com.example.earlychildhooddevelopmentapp.Model.Headers;
 import com.example.earlychildhooddevelopmentapp.Model.Milestone;
 import com.example.earlychildhooddevelopmentapp.Model.Page;
-import com.example.earlychildhooddevelopmentapp.Model.SwitchPage;
 import com.example.earlychildhooddevelopmentapp.R;
 
 public class MilestoneActivity extends AppCompatActivity {
@@ -24,7 +23,6 @@ public class MilestoneActivity extends AppCompatActivity {
     private Page currentPage;
     private Headers headers = new Headers();
     private Milestone milestone = new Milestone();
-    private SwitchPage switchPage;
 
     // Views
     private TextView headerTextView;
@@ -68,7 +66,6 @@ public class MilestoneActivity extends AppCompatActivity {
         months = intent.getIntExtra("months", 0);
 //        premature = getIntent().getExtras().getBoolean("perfect");
 
-        int page = switchPage.SwitchPage(year, months);
         if(year > 5){
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setTitle("Oops!");
