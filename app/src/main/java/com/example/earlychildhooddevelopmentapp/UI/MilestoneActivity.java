@@ -64,7 +64,6 @@ public class MilestoneActivity extends AppCompatActivity {
         Intent intent = getIntent();
         year = intent.getIntExtra("years", 0);
         months = intent.getIntExtra("months", 0);
-//        premature = getIntent().getExtras().getBoolean("perfect");
 
         if(year > 5){
             AlertDialog.Builder builder = new AlertDialog.Builder(this);

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ff0082fc"
+    android:background="#CCCCCC"
     tools:context=".UI.MainActivity">
 
     <ScrollView
@@ -31,10 +31,13 @@
 
             <DatePicker
                 android:id="@+id/birthDatePicker"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginBottom="20dp"
-                android:calendarViewShown="false" />
+                android:calendarViewShown="false"
+                android:headerBackground="#ff0082fc"
+                android:isScrollContainer="false" />
 
             <TextView
                 android:id="@+id/earlyTextView"
